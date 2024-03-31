@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/For publication/css/style.css">
-  <link rel="stylesheet" href="/For publication/css/swiper.min.css">
-  <title>Responsive-Blog-Card-Slider</title>
+    <meta charset="UTF-8">
+    <title>Yanix — Золотые Цитаты</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div id="start-page" class="screen">
-    <div class="start-content">
-      <img src="/img/backYang.jpg" alt="Артист" class="artist-photo">
-      <button id="to-quotes"><img class="to-quotes-img" src="/img/Gquotes.png" alt=""></button>
+    <div id="start-page" class="screen">
+        <div class="start-content">
+            <img src="img/Default_Create_a_mockup_of_a_website_dedicated_to_trap_musicia_1_ins.jpg" alt="Артист"
+                class="artist-photo">
+            <button id="to-quotes">Перейти к золотым цитатам</button>
+        </div>
     </div>
-  </div>
-  <div id="quotes-section" class="blog-slider screen" style="display:none">
-    <div class="blog-slider__wrp swiper-wrapper ">
-      <!-- Слайды будут добавлены здесь динамически -->
+
+    <div id="quotes-section" class="screen" style="display:none">
+        <div id="carousel" class="carousel">
+
+        </div>
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <!-- Слайды будут добавлены здесь динамически -->
+            </div>
+            <div class="blog-slider__pagination"></div>
+        </div>
     </div>
-    <div class="blog-slider__pagination"></div>
-  </div>
+    <div>
+        <button id="prevBtn">Пред.</button>
+        <button id="nextBtn">След.</button>
+    </div>
 
-  <header id="header" style="display: none;">
-    <a href=""><img src="/img/Yanix.png" alt=""></a>
-  </header>
 
-  <div id="quote-detail" class="screen" style="display:none">
-    <button id="backToQuotes">Назад к цитатам</button>
-    <p id="selected-quote">Здесь будет цитата</p>
-    <img id="album-cover" src="" alt="Обложка альбома" />
-    <p id="song-text">Текст песни</p>
+    <div id="quote-detail" class="screen" style="display:none">
+        <button id="backToQuotes">Назад к цитатам</button>
+        <p id="selected-quote">Здесь будет цитата</p>
+        <img id="album-cover" src="" alt="Обложка альбома" />
+        <p id="song-text">Текст песни</p>
+        <audio controls id="audio-player">
+            <source src="" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+    </div>
 
-    <audio controls id="audio-player">
-      <source src="" type="audio/mpeg">
-      Ваш браузер не поддерживает аудио элемент.
-    </audio>
-  </div>
-
-  <footer>
-    <img src="" alt="">
-  </footer>
-
-  <script src="/For publication/js/swiper.min.js"></script>
-  <script src="/For publication/js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
